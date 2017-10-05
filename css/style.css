@@ -1,0 +1,54 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#generate-input-group {
+  width: 100%;
+}
+
+#response {
+  height: 100%;
+}
+
+.centered {
+  text-align: center;
+  font-size: small;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #ffffff;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+.site-footer .icon {
+  font-size: 20px;
+}
+
+.site-footer .love .fa {
+  font-size: 12px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #ff8181;
+}
