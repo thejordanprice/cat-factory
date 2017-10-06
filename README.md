@@ -1,4 +1,4 @@
-# cat-generator
+# cat-factory
 
 [![GitHub issues](https://img.shields.io/github/issues/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/issues)
 [![GitHub stars](https://img.shields.io/github/stars/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/stargazers)
