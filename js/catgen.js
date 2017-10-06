@@ -44,6 +44,36 @@ const generateId = function(callback) {
 };
 
 /*
+ * Easy generation of alerts, a small function;
+ * I kept seeing extra repeated code, so I made this to see less.
+ * Could probably ditch the callback to make even less typing.
+ */
+const alertGenerator = function(type, strong, text, callback) {
+  callback('<div class="alert alert-' + type + '"><strong>' + strong + '</strong> ' + text + '</div>');
+};
+
+/*
+ * Wrapper for factory as a library.
+ * This on is to return into a div.
+ */
+const catGenToEle = function(count, output_element) {
+  catFactory(count, function(cats) {
+    return output_element.innerHTML = JSON.stringify(cats, null, 2);
+  });
+};
+
+/*
+ * Wrapper for factory as a library.
+ * This returns the actual object.
+ */
+const catGenToObject = function(count) {
+  catFactory(count, function(cats) {
+    let data = JSON.stringify(cats, null, 2);
+    return data;
+  });
+};
+
+/*
 * A single cat generator from desired options.
 */
 const catGenerator = function(callback) {
@@ -118,7 +148,9 @@ const catFactory = function(amount, callback) {
 document.getElementById('generate').addEventListener("click", function() {
   let amount = document.getElementById('amount').value.toString();
   if (amount > 9000 || amount == 0) {
-    response_div.innerHTML = '<div class="alert alert-warning"><strong>Roaawrr!</strong> Stay between 1 and 9000.</div>';
+    alertGenerator('warning', 'Roaawrr!', 'Stay between 1 and 9000', function(result){
+      response_div.innerHTML = result;
+    });
   } else {
     catFactory(amount, function(cats) {
       // Check your console.
@@ -135,7 +167,9 @@ document.getElementById('generate').addEventListener("click", function() {
 * Event listener for onclick of the clear button to destroy the log.
 */
 document.getElementById('destroy').addEventListener("click", function() {
-    response_div.innerHTML = '<div class="alert alert-primary"><strong>Yay!</strong> Log purged.</div>';
+  alertGenerator('primary', 'Success!', 'Log Purrrged', function(result){
+    response_div.innerHTML = result;
+  });
 });
 
 };
