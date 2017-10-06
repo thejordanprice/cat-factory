@@ -104,11 +104,11 @@ Soon it will change. Upon a complete functioning library build, I will move the 
 
 - [x] Prototype.
 - [x] Polish GUI.
+- [ ] Finish library functionality.
+- [ ] Call said library in code.
 - [ ] Add some more cat data.
 - [ ] Change to babel file scheme.
 - [ ] Start compiling official builds.
-- [ ] Finish library functionality.
-- [ ] Call said library in code.
 
 ### License
 
