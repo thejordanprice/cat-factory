@@ -10,6 +10,37 @@ Open to pull requests, clones, and what have you. I wouldn't mind making this mo
 
 [thejordanprice.github.io/cat-generator](https://thejordanprice.github.io/cat-generator) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
 
+### Example Usage
+
+**Simple IF**
+
+     let cat = {
+      "id": "jht4jsl33t8",
+      "data": {
+        "name": "Coco",
+        "species": "Bengal",
+        "alive": {
+          "value": true,
+          "lives": 6
+        },
+        "personality": "Hostile",
+        "color": "Orange",
+        "weight": "26 lbs."
+      }
+    };
+
+    /*
+     * Check if the cat is alive.
+     * Most basic example.
+     */
+    if (cat.data.alive.value) {
+        console.log(true);
+    } else {
+        console.log(false);
+    };
+    
+## Development
+
 ### Easy Mode
 
     git clone https://github.com/thejordanprice/cat-generator
