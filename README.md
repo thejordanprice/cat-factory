@@ -24,7 +24,6 @@ Open to pull requests, clones, and what have you. I wouldn't mind making this mo
 ### Screenshot
 
 ![Screenshot](https://i.imgur.com/ZH7aUMJ.png)
-![Screenshot](https://i.imgur.com/1ZnuAmA.png)
 
 ### To-Do
 
