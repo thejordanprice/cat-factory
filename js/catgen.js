@@ -73,7 +73,7 @@ window.onload=function(){
   * When calling from the console.log in loaded page....
   * Note: VM166:1 Uncaught ReferenceError: catGenToObject
   */
-  const catGenToObject = function(count) {
+  const catGenToObj = function(count) {
     catFactory(count, function(cats) {
       let data = JSON.stringify(cats, null, 2);
       return data;
