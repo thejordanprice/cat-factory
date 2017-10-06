@@ -95,6 +95,8 @@ I'm sure there are little things that need changed along the line somewhere, thi
     /js/jquery-3.2.1.slim.min.js
     /js/popper.min.js
 
+Soon it will change. Upon a complete functioning library build, I will move the project into new folders. It will be easier to work with babel and polyfills to ensure it runs everywhere; meaning node and browsers. At that point it will be considered to be thrown into the npm, for even easier cat objects.
+
 ### Screenshot
 
 ![Screenshot](https://i.imgur.com/ZH7aUMJ.png)
@@ -104,7 +106,9 @@ I'm sure there are little things that need changed along the line somewhere, thi
 - [x] Prototype.
 - [x] Polish GUI.
 - [ ] Add some more cat data.
-- [ ] Change functionality into a library.
+- [ ] Change to babel file scheme.
+- [ ] Start compiling official builds.
+- [ ] Finish library functionality.
 - [ ] Call said library in code.
 
 ### License
