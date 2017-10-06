@@ -20,9 +20,31 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
 
 ### Example Usage
 
-**Simple IF**
+**Library example**
 
-     let cat = {
+    /*
+     * Library use.
+     * Still under development
+     */
+    const catGen() = require('./js/catgen.js');
+
+    let count = 0;
+    let element = '';
+
+    // to inject into the DOM easily.
+    catGenToEle(count, element);
+    
+    // to insert into the code easily.
+    let obj = catGenToObj(count);
+    console.dir(obj);
+
+
+**If Statement**
+
+    /*
+     * Works great.
+     */
+    let cat = {
       "id": "jht4jsl33t8",
       "data": {
         "name": "Coco",
