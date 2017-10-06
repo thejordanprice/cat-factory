@@ -18,9 +18,9 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
 
 [thejordanprice.github.io/cat-generator](https://thejordanprice.github.io/cat-generator) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
 
-### Example Usage
+### Examples
 
-**Library example**
+**Library**
 
     /*
      * Library use.
@@ -71,7 +71,7 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
     
 ## Development
 
-### Easy Mode
+### Getting Started
 
     git clone https://github.com/thejordanprice/cat-generator
     cd cat-generator
