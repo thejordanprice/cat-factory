@@ -28,7 +28,7 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
      */
     const catGen() = require('./js/catgen.js');
 
-    let count = 0;
+    let count = 2;
     let element = '';
 
     // to inject into the DOM easily.
