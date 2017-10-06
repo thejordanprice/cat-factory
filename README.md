@@ -1,10 +1,10 @@
 # cat-factory
 
-[![GitHub issues](https://img.shields.io/github/issues/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/issues)
-[![GitHub stars](https://img.shields.io/github/stars/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/network)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/thejordanprice/cat-generator/master/LICENSE)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/thejordanprice/cat-generator.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+[![GitHub issues](https://img.shields.io/github/issues/thejordanprice/cat-factory.svg)](https://github.com/thejordanprice/cat-factory/issues)
+[![GitHub stars](https://img.shields.io/github/stars/thejordanprice/cat-factory.svg)](https://github.com/thejordanprice/cat-factory/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/thejordanprice/cat-factory.svg)](https://github.com/thejordanprice/cat-factory/network)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/thejordanprice/cat-factory/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/thejordanprice/cat-factory.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 ##### Description
 
@@ -16,7 +16,7 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
 
 ### Running Demo
 
-[thejordanprice.github.io/cat-factory](https://thejordanprice.github.io/cat-generator) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
+[thejordanprice.github.io/cat-factory](https://thejordanprice.github.io/cat-factory) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
 
 ## Development
 
