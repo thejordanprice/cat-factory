@@ -12,7 +12,7 @@ A simple webapp I've developed to show best practices and teach the fundamentals
 
 This does utilize responsive web design with bootstrap/jquery/fontawesome. Then some of the exciting stuff such as let, const, callback, iterators, factories, ect... Not only does it do all that, but it doesn't require a server! This seems great for kids and people of the internets; let's teach people!
 
-This is fully open to pull requests, and what have you. I wouldn't mind making this more fun.
+This is fully open to pull requests, and what have you. I wouldn't mind making this more fun. :cat:
 
 ### Running Demo
 
