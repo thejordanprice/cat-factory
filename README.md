@@ -16,7 +16,7 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
 
 ### Running Demo
 
-[thejordanprice.github.io/cat-generator](https://thejordanprice.github.io/cat-generator) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
+[thejordanprice.github.io/cat-factory](https://thejordanprice.github.io/cat-generator) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
 
 ### Examples
 
