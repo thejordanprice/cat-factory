@@ -25,6 +25,8 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
     /*
      * Library use.
      * Still under development.
+     * When calling from the console.log in loaded page....
+     * VM166:1 Uncaught ReferenceError: catGenToObject
      */
     const catGen() = require('./js/catgen.js');
 

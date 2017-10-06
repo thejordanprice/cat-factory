@@ -55,6 +55,9 @@ window.onload=function(){
   * Wrapper for factory as a library.
   * This on is to return into a div.
   * Can be reworked easily atm.
+  *
+  * When calling from the console.log in loaded page....
+  * Note: VM166:1 Uncaught ReferenceError: catGenToEle
   */
   const catGenToEle = function(count, output_element) {
     catFactory(count, function(cats) {
@@ -66,6 +69,9 @@ window.onload=function(){
   * Wrapper for factory as a library.
   * This returns the actual object.
   * Can be reworked easily atm.
+  *
+  * When calling from the console.log in loaded page....
+  * Note: VM166:1 Uncaught ReferenceError: catGenToObject
   */
   const catGenToObject = function(count) {
     catFactory(count, function(cats) {
