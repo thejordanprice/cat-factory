@@ -28,7 +28,6 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
      * When calling from the console.log in loaded page....
      * VM166:1 Uncaught ReferenceError: catGenToObject
      */
-    const catGen() = require('./js/catgen.js');
 
     let count = 2;
     let element = '';
