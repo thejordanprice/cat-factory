@@ -55,6 +55,7 @@ const alertGenerator = function(type, strong, text, callback) {
 /*
  * Wrapper for factory as a library.
  * This on is to return into a div.
+ * Can be reworked easily atm.
  */
 const catGenToEle = function(count, output_element) {
   catFactory(count, function(cats) {
@@ -65,6 +66,7 @@ const catGenToEle = function(count, output_element) {
 /*
  * Wrapper for factory as a library.
  * This returns the actual object.
+ * Can be reworked easily atm.
  */
 const catGenToObject = function(count) {
   catFactory(count, function(cats) {
@@ -121,6 +123,8 @@ const catGenerator = function(callback) {
 const catFactory = function(amount, callback) {
   let cats = [];
   for (let x = 0; amount > x; x++) {
+    // How many, make that many.
+    // One at a time.
     catGenerator(function(cat) {
       let oneCat = {
         "id": cat.id,
