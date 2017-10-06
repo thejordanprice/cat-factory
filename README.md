@@ -60,7 +60,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
 
 I'm sure there are little things that need changed along the line somewhere, this was a complete hackathon over a few hours. Do you want to add **more** types of stats? **more** GUI options? ideas?... **do** it.
 
-### Dev Structure
+### File Structure
 
     /index.html
     /css/bootstrap.min.css
