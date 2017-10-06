@@ -1,10 +1,10 @@
-# cat-generator
+# cat-factory
 
-[![GitHub issues](https://img.shields.io/github/issues/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/issues)
-[![GitHub stars](https://img.shields.io/github/stars/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/network)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/thejordanprice/cat-generator/master/LICENSE)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/thejordanprice/cat-generator.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+[![GitHub issues](https://img.shields.io/github/issues/thejordanprice/cat-factory.svg)](https://github.com/thejordanprice/cat-factory/issues)
+[![GitHub stars](https://img.shields.io/github/stars/thejordanprice/cat-factory.svg)](https://github.com/thejordanprice/cat-factory/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/thejordanprice/cat-factory.svg)](https://github.com/thejordanprice/cat-factory/network)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/thejordanprice/cat-factory/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/thejordanprice/cat-factory.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 ##### Description
 
@@ -16,7 +16,18 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
 
 ### Running Demo
 
-[thejordanprice.github.io/cat-generator](https://thejordanprice.github.io/cat-generator) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
+[thejordanprice.github.io/cat-factory](https://thejordanprice.github.io/cat-factory) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
+
+## Development
+
+### Getting Started
+
+    git clone https://github.com/thejordanprice/cat-generator
+    cd cat-generator
+    nano js/catgen.js
+    chrome 'file://~/cat-generator/index.html'
+
+Or for simple tinkering the jsfiddle link above could be useful. The entire project was originally developed on jsfiddle, then ported to github after polishing. *Note: Only missing piece on jsfiddle is the viewport for mobile testing (I could be wrong).*
 
 ### Examples
 
@@ -28,10 +39,9 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
      * When calling from the console.log in loaded page....
      * VM166:1 Uncaught ReferenceError: catGenToObject
      */
-    const catGen() = require('./js/catgen.js');
 
-    let count = 2;
-    let element = '';
+    const count = 2;
+    const element = 'result'; // element ID
 
     // to inject into the DOM easily.
     catGenToEle(count, element);
@@ -70,17 +80,6 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
     } else {
         console.log(false);
     };
-    
-## Development
-
-### Getting Started
-
-    git clone https://github.com/thejordanprice/cat-generator
-    cd cat-generator
-    nano js/catgen.js
-    chrome 'file://~/cat-generator/index.html'
-
-Or for simple tinkering the jsfiddle link above could be useful. The entire project was originally developed on jsfiddle, then ported to github after polishing. *Note: Only missing piece on jsfiddle is the viewport for mobile testing (I could be wrong).*
 
 I'm sure there are little things that need changed along the line somewhere, this was a complete hackathon over a few hours. Do you want to add **more** types of stats? **more** GUI options? ideas?... **do** it. Just please somewhat adhere to [this](https://github.com/thejordanprice/javascript) style guide. It will help keep continous improvment happening.
 
