@@ -29,8 +29,8 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
      * VM166:1 Uncaught ReferenceError: catGenToObject
      */
 
-    let count = 2;
-    let element = 'result'; // element ID
+    const count = 2;
+    const element = 'result'; // element ID
 
     // to inject into the DOM easily.
     catGenToEle(count, element);
