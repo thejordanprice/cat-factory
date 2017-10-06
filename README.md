@@ -1,12 +1,14 @@
 # cat-generator
 
-A simple webapp I've developed to show best practices and teach the fundamentals of Bootstrap and JavaScript development in a fun way. Not only is it fun to play with code if you already have some data; but now its easy to get data and your data can involve cats.
+##### Description
 
-This does utilize responsive web design with bootstrap/jquery/fontawesome. Then some of the exciting stuff such as let, const, callback, iterators, factories, ect... Not only does it do all that, but it doesn't require a server! I am on a mission; Let's teach people!
+A simple webapp I've developed to show best practices and teach the fundamentals of Bootstrap and JavaScript development in a fun way. Not only is it fun to play with code if you already have some data to play with; but now its easy to get data and the data can involve cats or a ton of them whatever you prefer.
 
-Open to pull requests, clones, and what have you. I wouldn't mind making this more fun.
+This does utilize responsive web design with bootstrap/jquery/fontawesome. Then some of the exciting stuff such as let, const, callback, iterators, factories, ect... Not only does it do all that, but it doesn't require a server! This seems great for kids and people of the internets; let's teach people!
 
-### Demo
+This is fully open to pull requests, and what have you. I wouldn't mind making this more fun.
+
+### Running Demo
 
 [thejordanprice.github.io/cat-generator](https://thejordanprice.github.io/cat-generator) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
 
@@ -50,7 +52,7 @@ Open to pull requests, clones, and what have you. I wouldn't mind making this mo
 
 Or for simple tinkering the jsfiddle link above could be useful. The entire project was originally developed on jsfiddle, then ported to github after polishing. *Note: Only missing piece on jsfiddle is the viewport for mobile testing (I could be wrong).*
 
-### Structure
+### Dev Structure
 
     /index.html
     /css/bootstrap.min.css
