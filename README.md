@@ -24,7 +24,7 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
 
     /*
      * Library use.
-     * Still under development
+     * Still under development.
      */
     const catGen() = require('./js/catgen.js');
 
