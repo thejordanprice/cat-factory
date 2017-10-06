@@ -8,7 +8,16 @@ Open to pull requests, clones, and what have you. I wouldn't mind making this mo
 
 ### Demo
 
-[thejordanprice.github.io/cat-generator](https://thejordanprice.github.io/cat-generator)
+[thejordanprice.github.io/cat-generator](https://thejordanprice.github.io/cat-generator) or [jsfiddle.net](https://jsfiddle.net/thejordanprice/fs3fvekw/)
+
+### Easy Mode
+
+    git clone https://github.com/thejordanprice/cat-generator
+    cd cat-generator
+    nano js/catgen.js
+    chrome 'file://~/cat-generator/index.html'
+
+Or for simple tinkering the jsfiddle link above could be useful. The entire project was originally developed on jsfiddle, then ported to github after polishing. *Note: Only missing piece on jsfiddle is the viewport for mobile testing (I could be wrong).*
 
 ### Structure
 
