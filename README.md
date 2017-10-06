@@ -30,7 +30,7 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
      */
 
     let count = 2;
-    let element = '';
+    let element = 'result'; // element ID
 
     // to inject into the DOM easily.
     catGenToEle(count, element);
