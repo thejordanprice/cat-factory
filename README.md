@@ -1,5 +1,11 @@
 # cat-generator
 
+[![GitHub issues](https://img.shields.io/github/issues/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/issues)
+[![GitHub stars](https://img.shields.io/github/stars/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/thejordanprice/cat-generator.svg)](https://github.com/thejordanprice/cat-generator/network)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/thejordanprice/cat-generator/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/thejordanprice/cat-generator.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+
 ##### Description
 
 A simple webapp I've developed to show best practices and teach the fundamentals of Bootstrap and JavaScript development in a fun way. Not only is it fun to play with code if you already have some data to play with; but now its easy to get data and the data can involve cats or a ton of them whatever you prefer.
