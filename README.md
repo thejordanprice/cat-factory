@@ -92,13 +92,8 @@ I'm sure there are little things that need changed along the line somewhere, thi
 ### File Structure
 
     /index.html
-    /css/bootstrap.min.css
-    /css/style.css
-    /js/catgen.js <-- the gravy
-    /js/bootstrap.min.js
-    /js/fontawesome-loader.js
-    /js/jquery-3.2.1.slim.min.js
-    /js/popper.min.js
+    /src/style.css
+    /src/catgen.js <-- the gravy
 
 ### Screenshot
 
