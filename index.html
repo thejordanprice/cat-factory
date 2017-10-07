@@ -74,17 +74,8 @@
     genCats(count, output);
   };
 
-  // Event listener for enter to generate.
-  document.getElementById('generate')
-    .addEventListener('keypress', function(event) {
-      if (event.which == 13 || event.keyCode == 13) {
-          Run();
-          return false;
-      };
-  });
-
   // Event listener for onclick to generate.
-    document.getElementById('generate')
+  document.getElementById('generate')
     .addEventListener('click', function() {
       Run();
   });
