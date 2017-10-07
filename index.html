@@ -93,7 +93,7 @@
   
   // Event listener for enter button to generate.
   document.getElementById('count')
-    .addEventListener('keypress', function(event) {
+    .addEventListener('keydown', function(event) {
       if (!event) event = window.event;
       let key = event.keyCode || event.which;
       if (key === '13') {
