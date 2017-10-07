@@ -46,7 +46,8 @@ code {
   font-size: 20px;
 }
 
-.site-footer .love .fa {
+.site-footer .love .fa,
+#face {
   font-size: 12px;
   margin-left: 2px;
   margin-right: 2px;
