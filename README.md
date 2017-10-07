@@ -83,7 +83,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
     if (cat.data.alive.value) {
         console.log(true); // true
     };
-    
+
     // check if name is Coco
     if (cat.data.name === 'Coco') {
         console.log(true); // true
@@ -93,9 +93,11 @@ I'm sure there are little things that need changed along the line somewhere, thi
 
 ### File Structure
 
-    /index.html
-    /src/style.css
-    /src/catgen.js <-- the gravy
+    /index.html          // html doc
+    /src/style.css       // stylesheet
+    /src/catgen.js       // the factory
+    /dist/style.min.css  // minified style
+    /dist/catgen.min.js  // minified catgen
 
 ### Screenshot
 
