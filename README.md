@@ -102,8 +102,8 @@ I'm sure there are little things that need changed along the line somewhere, thi
 
 - [x] Prototype.
 - [x] Polish GUI.
-- [ ] Finish library functionality.
-- [ ] Call said library in code.
+- [x] Finish library functionality.
+- [x] Call said library in code.
 - [ ] Add some more cat data.
 
 ### License
