@@ -25,7 +25,6 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
     git clone https://github.com/thejordanprice/cat-factory
     cd cat-factory
     nano src/catgen.js
-    chrome 'file://~/cat-factory/index.html'
 
 Or for simple tinkering the jsfiddle link above could be useful. The entire project was originally developed on jsfiddle, then ported to github after polishing. *Note: Only missing piece on jsfiddle is the viewport for mobile testing (I could be wrong).*
 
