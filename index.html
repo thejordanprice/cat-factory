@@ -55,7 +55,7 @@
   <br />
   <pre id='output'></pre>
   <div class='centered'>
-    <p>A fun tool to generate a chunks data for learning.</p>
+    <p id='quote'></p>
     <p class='text-muted'>Note: Check the JavaScript console.</p>
   </div>
 </div>
@@ -68,6 +68,16 @@
 </footer>
 <!-- Invoke our functions from the required js file -->
 <script>
+  // Onload change quote on bottom.
+  window.onload = function() {
+    let quotes = [
+      'A fun tool to generate a chunks data for learning.',
+      'Another fun statement that is dynamic, kinda...',
+      'I will think of more things this can say at a later time.',
+    ];
+    let quote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('quote').innerHTML = quote;
+  };
   // Run, initiating the library functions.
   const Run = function() {
     let count = document.getElementById('count').value;
