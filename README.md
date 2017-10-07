@@ -96,8 +96,6 @@ I'm sure there are little things that need changed along the line somewhere, thi
     /index.html          // html doc
     /src/style.css       // stylesheet
     /src/catgen.js       // the factory
-    /dist/style.min.css  // minified style
-    /dist/catgen.min.js  // minified catgen
     
 *If you learned something; give me a star :D*
 
