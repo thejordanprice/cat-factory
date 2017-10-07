@@ -39,6 +39,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
         </head>
         <body>
             <pre id='output'></pre>
+            <button id='generate'>generate</button>
             <script>
                 // Run, initiating the library functions.
                 const Run = function() {
