@@ -11,7 +11,8 @@
   <script type="text/javascript" src="./js/popper.min.js"></script>
   <script type="text/javascript" src="./js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./js/fontawesome.min.js"></script>
-  <script type="text/javascript" src="./dist/catgen.min.js"></script>
+  <script type="text/javascript" src="./js/utils/alerts.js"></script>
+  <script type="text/javascript" src="./src/catgen.js"></script>
   <title>cat-factory by thejordanprice</title>
 </head>
 <body>
@@ -83,9 +84,7 @@
   // Event listener for onclick to destroy.
   document.getElementById('destroy')
     .addEventListener('click', function() {
-      alertGenerator('primary', 'Success!', 'Log Purrrged', function(result){
-        output.innerHTML = result;
-      });
+      output.innerHTML = 'Meow. :3';
   });
 </script>
 </body>

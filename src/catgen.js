@@ -1,14 +1,5 @@
 'use strict';
 
-/**
-  * Easy generation of alerts, a small function;
-  * I kept seeing extra repeated code, so I made this to see less.
-  * Could probably ditch the callback to make even less typing.
-  */
-const alertGenerator = function(type, strong, text, callback) {
-  callback('<div class="alert alert-' + type + '"><strong>' + strong + '</strong> ' + text + '</div>');
-};
-
 const genCats = function(count, output) {
 
   /**
@@ -32,7 +23,7 @@ const genCats = function(count, output) {
    * Calculate a random weight.
    */
   const calcWeight = function(min, max, callback) {
-    let weight = Math.floor(Math.random() * max) + min + " lbs.";
+    let weight = Math.floor(Math.random() * max) + min;
     callback(weight);
   };
 
@@ -90,9 +81,9 @@ const genCats = function(count, output) {
    * A cat factory that can produce ANY amount of cats.
    * Note: Cats were pushed; not hurt.
    */
-  const catFactory = function(amount, callback) {
+  const catFactory = function(count, callback) {
     let cats = [];
-    for (let x = 0; amount > x; x++) {
+    for (let x = 0; count > x; x++) {
       // How many, make that many.
       // One at a time.
       catGenerator(function(cat) {
@@ -116,22 +107,13 @@ const genCats = function(count, output) {
     callback(cats);
   };
 
-  /**
-   * Event listener for onclick of the generate button to invoke the factory.
-   */
-  let amount = count;
-  if (amount > 9000 || amount == 0) {
-    alertGenerator('warning', 'Roaawrr!', 'Stay between 1 and 9000', function(result) {
-      response_div.innerHTML = result;
-    });
-  } else {
-    catFactory(amount, function(cats) {
+  if (count) {
+    catFactory(count, function(cats) {
       // Check your console.
       console.dir(cats);
       // Send to DOM 
       output.innerHTML = JSON.stringify(cats, null, 2);
     });
   };
-
 };
 //EOL
