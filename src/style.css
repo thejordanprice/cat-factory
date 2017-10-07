@@ -8,7 +8,7 @@ body {
 }
 
 #generate-input-group {
-  width: 40em;
+  width: 100%;
 }
 
 #response {
@@ -17,7 +17,6 @@ body {
 
 .centered {
   text-align: center;
-  font-size: small;
 }
 
 .footer {
