@@ -23,9 +23,9 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
 ### Getting Started
 
     git clone https://github.com/thejordanprice/cat-factory
-    cd cat-generator
-    nano js/catgen.js
-    chrome 'file://~/cat-generator/index.html'
+    cd cat-factory
+    nano src/catgen.js
+    chrome 'file://~/cat-factory/index.html'
 
 Or for simple tinkering the jsfiddle link above could be useful. The entire project was originally developed on jsfiddle, then ported to github after polishing. *Note: Only missing piece on jsfiddle is the viewport for mobile testing (I could be wrong).*
 
@@ -59,11 +59,11 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
     </html>
 
 
-**If Statement**
+**If Statements and Learning**
 
-    /*
-     * Works great.
-     */
+*The secret sauce to why this even exists...*
+
+    // declare the object as a variable.
     let cat = {
       "id": "jht4jsl33t8",
       "data": {
@@ -79,10 +79,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
       }
     };
 
-    /*
-     * Check if the cat is alive.
-     * Most basic example.
-     */
+    // check if some data is true.
     if (cat.data.alive.value) {
         console.log(true);
     } else {
@@ -108,6 +105,7 @@ I'm sure there are little things that need changed along the line somewhere, thi
 - [x] Finish library functionality.
 - [x] Call said library in code.
 - [ ] Add some more cat data.
+- [ ] alertGenerator somewhere else or alt.
 
 ### License
 
