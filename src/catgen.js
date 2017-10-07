@@ -31,10 +31,17 @@ const genCats = function(count, output) {
 
   /**
    * Generate an example ID.
+   * This is a fun one.
    */
   const generateId = function(callback) {
     let id = Math.random().toString(32).substr(2, 32);
-    callback(id);
+    if (id.length !== 10) {
+      generateId(function(id) {
+        callback(id);
+      });
+    } else {
+      callback(id);
+    };
   };
 
   /**
