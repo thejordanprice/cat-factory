@@ -22,7 +22,7 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
 
 ### Getting Started
 
-    git clone https://github.com/thejordanprice/cat-generator
+    git clone https://github.com/thejordanprice/cat-factory
     cd cat-generator
     nano js/catgen.js
     chrome 'file://~/cat-generator/index.html'
@@ -33,22 +33,28 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
 
 **Library**
 
-    /*
-     * Library use.
-     * Still under development.
-     * When calling from the console.log in loaded page....
-     * VM166:1 Uncaught ReferenceError: catGenToObject
-     */
+    <html>
+        <head>
+            <script type="text/javascript" src="./js/catgen.js"></script>
+        </head>
+        <body>
+            <pre id='output'></pre>
+            <script>
+                // Run, initiating the library functions.
+                const Run = function() {
+                    let count = document.getElementById('count').value;
+                    let output = document.getElementById('output');
+                    genCats(count, output);
+                };
 
-    const count = 2;
-    const element = 'result'; // element ID
-
-    // to inject into the DOM easily.
-    catGenToEle(count, element);
-    
-    // to insert into the code easily.
-    let obj = catGenToObj(count);
-    console.dir(obj);
+                // Event listener for onclick to generate.
+                document.getElementById('generate')
+                    .addEventListener("click", function() {
+                    Run();
+                });
+            </script>
+        </body>
+    </html>
 
 
 **If Statement**
