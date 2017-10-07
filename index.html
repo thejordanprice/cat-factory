@@ -11,7 +11,6 @@
   <script type="text/javascript" src="./js/popper.min.js"></script>
   <script type="text/javascript" src="./js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./js/fontawesome.min.js"></script>
-  <script type="text/javascript" src="./js/utils/alerts.js"></script>
   <script type="text/javascript" src="./src/catgen.js"></script>
   <title>cat-factory by thejordanprice</title>
 </head>
@@ -75,8 +74,17 @@
     genCats(count, output);
   };
 
-  // Event listener for onclick to generate.
+  // Event listener for enter to generate.
   document.getElementById('generate')
+    .addEventListener('keypress', function(event) {
+      if (event.which == 13 || event.keyCode == 13) {
+          Run();
+          return false;
+      };
+  });
+
+  // Event listener for onclick to generate.
+    document.getElementById('generate')
     .addEventListener('click', function() {
       Run();
   });
