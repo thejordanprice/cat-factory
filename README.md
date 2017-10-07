@@ -57,6 +57,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
         </body>
     </html>
 
+A fiddle to fork using the library can be found [here](https://jsfiddle.net/thejordanprice/3713jcyf/).
 
 **If Statements and Learning**
 
