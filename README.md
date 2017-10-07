@@ -35,6 +35,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
 
     <html>
         <head>
+            <title>a cat-thing fork... :P</title>
             <script type="text/javascript" src="./js/catgen.js"></script>
         </head>
         <body>
@@ -50,7 +51,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
 
                 // Event listener for onclick to generate.
                 document.getElementById('generate')
-                    .addEventListener("click", function() {
+                    .addEventListener('click', function() {
                     Run();
                 });
             </script>
