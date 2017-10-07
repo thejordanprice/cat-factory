@@ -9,6 +9,8 @@ const genCats = function(count, output) {
   const colors = ["Black", "Brown", "Orange", "Tan", "White", "Brindle", "Grey", "White and Black", "Tan and Brown", "Brown and Black", "White and Brindle", "Brown and Grey", "Orange and White"];
   const species = ["Abyssinian", "Siamese", "Persian", "American Shorthair", "Ragdoll", "Burmese", "Maine Coon", "Charteux", "Bengal", "Manx", "Sphynx"];
   const personalities = ["Friendly", "Hostile", "Cuddly", "Playful", "Attack Cat", "Snuggle Butt"];
+  const physiques = ["Ultra Fat", "Fat", "Slender", "Tall", "Skinny", "Purrfect", "Normal"];
+  const eyeColors = ["Blue", "Green", "Aqua", "Yellow", "Orange", "Amber", "Brown", "Lilac", "Albino"];
   const lives = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   /**
@@ -70,6 +72,14 @@ const genCats = function(count, output) {
     select(personalities, function(personality) {
       cat.personality = personality;
     });
+    // Select the physique.
+    select(physiques, function(physique) {
+      cat.physique = physique;
+    });
+    // Select the colors.
+    select(eyeColors, function(eyeColor) {
+      cat.eyeColor = eyeColor;
+    });
     // Run the weight calculator.
     calcWeight(5, 35, function(weight) {
       cat.weight = weight;
@@ -89,17 +99,20 @@ const genCats = function(count, output) {
       catGenerator(function(cat) {
         let oneCat = {
           "id": cat.id,
-          "data": {
-            "name": cat.name,
-            "species": cat.species,
-            "alive": {
-              "value": cat.alive,
-              "lives": cat.lives,
-            },
-            "personality": cat.personality,
+          "name": cat.name,
+          "species": cat.species,
+          "alive": {
+            "boolean": cat.alive,
+            "lives": cat.lives,
+          },
+          "specs": {
             "color": cat.color,
             "weight": cat.weight,
+            "eyeColor": cat.eyeColor,
+            "personality": cat.personality,
+            "physique": cat.physique,
           },
+          "version": '0.1.2',
         };
         cats.push(oneCat);
       });
