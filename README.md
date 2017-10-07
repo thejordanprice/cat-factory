@@ -36,7 +36,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
     <html>
         <head>
             <title>a cat-thing fork... :P</title>
-            <script type='text/javascript' src='/dist/catgen.js'></script>
+            <script type='text/javascript' src='/dist/catgen.min.js'></script>
         </head>
         <body>
             <pre id='output'></pre>
@@ -81,9 +81,12 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
 
     // check if some data is true.
     if (cat.data.alive.value) {
-        console.log(true);
-    } else {
-        console.log(false);
+        console.log(true); // true
+    };
+    
+    // check if name is Coco
+    if (cat.data.name === 'Coco') {
+        console.log(true); // true
     };
 
 I'm sure there are little things that need changed along the line somewhere, this was a complete hackathon over a few hours. Do you want to add **more** types of stats? **more** GUI options? ideas?... **do** it.
