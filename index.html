@@ -76,13 +76,13 @@
 
   // Event listener for onclick to generate.
   document.getElementById('generate')
-    .addEventListener("click", function() {
+    .addEventListener('click', function() {
       Run();
   });
 
   // Event listener for onclick to destroy.
   document.getElementById('destroy')
-    .addEventListener("click", function() {
+    .addEventListener('click', function() {
       alertGenerator('primary', 'Success!', 'Log Purrrged', function(result){
         output.innerHTML = result;
       });
