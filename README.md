@@ -81,7 +81,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
         console.log(false);
     };
 
-I'm sure there are little things that need changed along the line somewhere, this was a complete hackathon over a few hours. Do you want to add **more** types of stats? **more** GUI options? ideas?... **do** it. Just please somewhat adhere to [this](https://github.com/thejordanprice/javascript) style guide. It will help keep continous improvment happening.
+I'm sure there are little things that need changed along the line somewhere, this was a complete hackathon over a few hours. Do you want to add **more** types of stats? **more** GUI options? ideas?... **do** it.
 
 ### File Structure
 
@@ -94,8 +94,6 @@ I'm sure there are little things that need changed along the line somewhere, thi
     /js/jquery-3.2.1.slim.min.js
     /js/popper.min.js
 
-Soon it will change. Upon a complete functioning library build, I will move the project into new folders. It will be easier to work with babel and polyfills to ensure it runs everywhere; meaning node and browsers. At that point it will be considered to be thrown into the npm, for even easier cat objects.
-
 ### Screenshot
 
 ![Screenshot](https://i.imgur.com/ZH7aUMJ.png)
@@ -107,8 +105,6 @@ Soon it will change. Upon a complete functioning library build, I will move the 
 - [ ] Finish library functionality.
 - [ ] Call said library in code.
 - [ ] Add some more cat data.
-- [ ] Change to babel file scheme.
-- [ ] Start compiling official builds.
 
 ### License
 
