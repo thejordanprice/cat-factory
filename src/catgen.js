@@ -107,11 +107,11 @@ const genCats = function(count, output) {
     callback(cats);
   };
 
-  if (count) {
+  if (count && output) {
     catFactory(count, function(cats) {
-      // Check your console.
+      // Send cats to console.
       console.dir(cats);
-      // Send to DOM 
+      // Send cats to DOM 
       output.innerHTML = JSON.stringify(cats, null, 2);
     });
   };
