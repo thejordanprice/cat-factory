@@ -50,9 +50,11 @@ const genCats = function(count, output) {
     let lonwhole = Math.ceil(Math.random() * (180 + 180)) - 180;
     let latdecim = Math.floor(Math.random() * 999999) + 100000;
     let londecim = Math.floor(Math.random() * 999999) + 100000;
+    let lat = (latwhole + '.' + latdecim).int();
+    let lon = (lonwhole + '.' + londecim).int();
     let gps = {
-      lat: lonwhole + '.' + londecim,
-      lon: latwhole + '.' + latdecim,
+      lat: lat,
+      lon: lon,
     };
     callback(gps);
   };
