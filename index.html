@@ -77,20 +77,20 @@
 <!-- Invoke our functions from the required js file -->
 <script>
   // The variables we're playing with.
-  const count = document.getElementById('count').value;
+  const count = document.getElementById('count');
   const output = document.getElementById('output');
 
   // Event listener for onclick to generate.
   document.getElementById('generate')
   .addEventListener('click', function() {
-    genCats(count, output);
+    genCats(count.value, output);
   });
   
   // Event listener for enter button to generate.
   document.getElementById('count')
   .addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-      genCats(count, output);
+      genCats(count.value, output);
     };
   });
 
@@ -102,7 +102,7 @@
     // copy the text.
     document.execCommand('copy');
     // if output box is empty.
-    if (output.value === '') {
+    if (!output.value) {
       // replace text with error.
       output.innerHTML = 'Nothing to copy right now.'
     } else {
