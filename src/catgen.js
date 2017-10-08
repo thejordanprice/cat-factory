@@ -1,5 +1,3 @@
-// @ts-check
-
 const genCats = function(count, output) {
   /**
    * Only let this use strict.
