@@ -41,7 +41,7 @@ const genCats = function(count, output) {
     let londecim = Math.floor(Math.random() * 999999) + 100000;
     let gps = {
       lat: lonwhole + '.' + londecim,
-      long: latwhole + '.' + latdecim,
+      lon: latwhole + '.' + latdecim,
     };
     // Just incase.
     if (latdecim.length || londecim.length < 6) {
