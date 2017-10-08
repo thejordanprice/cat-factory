@@ -105,12 +105,13 @@
     };
   });
 
-document.getElementById('copy')
-.addEventListener('click', function(event) {
-  let text = document.getElementById('output').select();
-  document.execCommand('copy');
-});
-  
+  // Event listener for the copy to clipboard.
+  document.getElementById('copy')
+  .addEventListener('click', function(event) {
+    let text = document.getElementById('output').select();
+    document.execCommand('copy');
+  });
+    
   // Event listener for onclick to destroy.
   document.getElementById('destroy')
   .addEventListener('click', function() {
