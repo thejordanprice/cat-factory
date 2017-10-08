@@ -109,7 +109,8 @@ I'm sure there are little things that need changed along the line somewhere, thi
 - [x] Polish GUI.
 - [x] Finish library functionality.
 - [x] Call said library in code.
-- [ ] Add some more cat data.
+- [x] Add some more cat data.
+- [ ] GPS coordinates of cat.
 - [ ] Add copy to clipboard button.
 - [ ] Find people that want JSON.
 

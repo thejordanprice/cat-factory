@@ -51,7 +51,12 @@
     </span>
   </div>
   <br />
-  <pre id='output'></pre>
+  <div class='btn-group' role='group' id='output-group' aria-hideen='true'>
+    <button type='button' id='copy' class='btn btn-primary'><i class='fa fa-copy' aria-hidden='true'></i></button>
+    <textarea class='form-control' id='output'></textarea>
+  </div>
+  <br />
+  <br />
   <div class='centered'>
     <p id='quote'></p>
     <p class='text-muted'>Note: Check the JavaScript console.</p>
@@ -73,7 +78,7 @@
       'A fun tool to generate chunks data for learning.',
       'Sleeping helps cats conserve energy in between their meals.',
       'Cats can drink seawater.',
-      'These can\’t taste sweet things.',
+      'Did you know cats can\’t taste sweet things.',
       'Isaac Newton invented the cat flap.',
     ];
     let quote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -95,10 +100,16 @@
   // Event listener for enter button to generate.
   document.getElementById('count')
   .addEventListener('keydown', function(event) {
-    if (event.key === 'Enter' || 13) {
+    if (event.key === 'Enter') {
       Run();
     };
   });
+
+document.getElementById('copy')
+.addEventListener('click', function(event) {
+  let text = document.getElementById('output').select();
+  document.execCommand('copy');
+});
   
   // Event listener for onclick to destroy.
   document.getElementById('destroy')
