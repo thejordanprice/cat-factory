@@ -155,7 +155,6 @@ const genCats = function(count, output) {
             "personality": cat.personality,
             "physique": cat.physique,
           },
-          "version": '0.1.2',
         };
         cats.push(oneCat);
       });
