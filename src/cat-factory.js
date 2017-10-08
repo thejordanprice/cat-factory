@@ -1,3 +1,14 @@
+/**
+ * 
+ * @param {Number} count 
+ * @param {Element} output 
+ * 
+ * If the second argument is null, it will return the object.
+ * 
+ * genCats(1, 'output') responds with.
+ * Generate one cat and then put it in the element with the id 'output'.
+ *
+ */
 const genCats = function(count, output) {
   /**
    * Only let this use strict.
@@ -152,13 +163,18 @@ const genCats = function(count, output) {
     callback(cats);
   };
 
-  if (count && output) {
-    catFactory(count, function(cats) {
-      // Send cats to console.
-      console.dir(cats);
+  /**
+   * Run the entire setup.
+   */
+  catFactory(count, function(cats) {
+    if (count && output) {
       // Send cats to DOM 
       output.innerHTML = JSON.stringify(cats, null, 2);
-    });
-  };
+    };
+    if (output == null) {
+      // If nowhere, return.
+      return cats;
+    };
+  });
 };
 //EOL
