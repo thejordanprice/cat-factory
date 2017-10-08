@@ -1,6 +1,8 @@
-'use strict';
-
 const genCats = function(count, output) {
+  /**
+   * Only let this use strict.
+   */
+  'use strict';
 
   /**
    * The possibilities to the mixing of cat pieces.
