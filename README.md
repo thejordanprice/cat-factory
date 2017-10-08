@@ -111,8 +111,8 @@ I'm sure there are little things that need changed along the line somewhere, thi
 - [x] Call said library in code.
 - [x] Add some more cat data.
 - [x] Add copy to clipboard button.
-- [ ] Polish added UI elements.
-- [ ] Add copied to clipboard alert.
+- [x] Polish added UI elements.
+- [x] Add copied to clipboard alert.
 - [ ] GPS coordinates of cat.
 - [ ] Find people that want JSON.
 
