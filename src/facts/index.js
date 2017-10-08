@@ -21,5 +21,5 @@ window.onload = function() {
     'The more you talk to your cat, the more it will talk to you.',
   ];
   let fact = facts[Math.floor(Math.random() * facts.length)];
-  document.getElementById('quote').innerHTML = fact;
+  document.getElementById('fact').innerHTML = fact;
 };
