@@ -67,6 +67,7 @@ const genCats = function(count, output) {
    * A single cat generator from desired options.
    * 
    * This need redone? Pretty sure cat.id... is not correct.
+   * I tried changing cat to this and it didn't work well. heh.
    */
   const catGenerator = function(callback) {
     let cat = [];
