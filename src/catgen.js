@@ -52,10 +52,10 @@ const genCats = function(count, output) {
    * Generate an example ID.
    * This is a fun one.
    */
-  const generateId = function(callback) {
+  const calcId = function(callback) {
     let id = Math.random().toString(32).substr(2, 32);
     if (id.length !== 10) {
-      generateId(function(id) {
+      calcId(function(id) {
         callback(id);
       });
     } else {
@@ -72,7 +72,7 @@ const genCats = function(count, output) {
   const catGenerator = function(callback) {
     let cat = [];
     // Generate an ID
-    generateId(function(id) {
+    calcId(function(id) {
       cat.id = id;
     });
     // Generate GPS coordinates.
