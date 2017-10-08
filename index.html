@@ -116,8 +116,14 @@
     document.getElementById('output').select();
     // copy the text.
     document.execCommand('copy');
-    // replace text with message.
-    output.innerHTML = 'Object knocked into clipboard...';
+    // if output box is empty.
+    if (output.value === '') {
+      // replace text with error.
+      output.innerHTML = 'Nothing to copy right now.'
+    } else {
+      // replace text with message.
+      output.innerHTML = 'Object knocked into clipboard...';
+    };
   });
     
   // Event listener for onclick to destroy.
