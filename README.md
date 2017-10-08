@@ -113,7 +113,7 @@ I'm sure there are little things that need changed along the line somewhere, thi
 - [x] Add copy to clipboard button.
 - [x] Polish added UI elements.
 - [x] Add copied to clipboard alert.
-- [ ] GPS coordinates of cat.
+- [x] GPS coordinates of cat.
 - [ ] Find people that want JSON.
 
 

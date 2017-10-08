@@ -32,6 +32,27 @@ const genCats = function(count, output) {
   };
 
   /**
+   * Generate random GPS coordinates of cat.
+   */
+  const calcCoordinates = function(callback) {
+    let latwhole = Math.ceil(Math.random() * (90 + 90)) - 90;
+    let lonwhole = Math.ceil(Math.random() * (180 + 180)) - 180;
+    let latdecim = Math.floor(Math.random() * 999999) + 100000;
+    let londecim = Math.floor(Math.random() * 999999) + 100000;
+    let gps = {
+      lat: lonwhole + '.' + londecim,
+      long: latwhole + '.' + latdecim,
+    };
+    // Just incase.
+    if (latdecim.length || londecim.length < 6) {
+      calcCoordinates(function(coordinates) {
+        callback(coordinates);
+      });
+    };
+    callback(gps);
+  };
+
+  /**
    * Generate an example ID.
    * This is a fun one.
    */
@@ -54,6 +75,10 @@ const genCats = function(count, output) {
     // Generate an ID
     generateId(function(id) {
       cat.id = id;
+    });
+    // Generate GPS coordinates.
+    calcCoordinates(function(coordinates){
+      cat.coordinates = coordinates;
     });
     // Select the name.
     select(names, function(name) {
@@ -110,6 +135,7 @@ const genCats = function(count, output) {
           "id": cat.id,
           "name": cat.name,
           "species": cat.species,
+          "location": cat.coordinates,
           "alive": {
             "boolean": cat.alive,
             "lives": cat.lives,
