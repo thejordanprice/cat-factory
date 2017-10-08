@@ -177,6 +177,8 @@ const genCats = function(count, output) {
    */
   catFactory(count, function(cats) {
     if (count && output) {
+      // Console.dir
+      console.dir(cats);
       // Send cats to DOM 
       output.innerHTML = JSON.stringify(cats, null, 2);
     };

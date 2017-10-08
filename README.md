@@ -30,7 +30,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
 
 ### Examples
 
-**Library**
+**Basic Page**
 
     <html>
         <head>
