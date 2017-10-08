@@ -11,7 +11,8 @@
   <script type="text/javascript" src="./lib/js/popper.min.js"></script>
   <script type="text/javascript" src="./lib/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./lib/js/fontawesome.min.js"></script>
-  <script type="text/javascript" src="./src/catgen.js"></script>
+  <script type="text/javascript" src="./src/facts/index.js"></script>
+  <script type="text/javascript" src="./src/cat-factory.js"></script>
   <title>cat-factory by thejordanprice</title>
 </head>
 <body>
@@ -75,37 +76,21 @@
 </footer>
 <!-- Invoke our functions from the required js file -->
 <script>
-  // Onload change quote on bottom.
-  // Hide in its own file. Heh.
-  window.onload = function() {
-    const quotes = [
-      'A fun tool to generate chunks data for learning.',
-      'Sleeping helps cats conserve energy in between their meals.',
-      'Cats can drink seawater.',
-      'Did you know cats can\’t taste sweet things.',
-      'Isaac Newton invented the cat flap.',
-    ];
-    let quote = quotes[Math.floor(Math.random() * quotes.length)];
-    document.getElementById('quote').innerHTML = quote;
-  };
-  // Run, initiating the library functions.
-  const Run = function() {
-    const count = document.getElementById('count').value;
-    const output = document.getElementById('output');
-    genCats(count, output);
-  };
+  // The variables we're playing with.
+  const count = document.getElementById('count').value;
+  const output = document.getElementById('output');
 
   // Event listener for onclick to generate.
   document.getElementById('generate')
   .addEventListener('click', function() {
-    Run();
+    genCats(count, output);
   });
   
   // Event listener for enter button to generate.
   document.getElementById('count')
   .addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-      Run();
+      genCats(count, output);
     };
   });
 

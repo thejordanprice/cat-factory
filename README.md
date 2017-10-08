@@ -10,9 +10,9 @@
 
 A simple webapp I've developed to show best practices and teach the fundamentals of Bootstrap and JavaScript development in a fun way. Not only is it fun to play with code if you already have some data to play with; but now its easy to get data and the data can involve cats or a ton of them whatever you prefer.
 
-This does utilize responsive web design with bootstrap/jquery/fontawesome. Then some of the exciting stuff such as let, const, callback, iterators, factories, ect... Not only does it do all that, but it doesn't require a server! This seems great for kids and people of the internets; let's teach people! *If you end up learning something; give me a star :D*
+This does utilize responsive web design with bootstrap/jquery/fontawesome. Then some of the exciting stuff such as let, const, callback, iterators, factories, ect... Not only does it do all that, but it doesn't require a server! This seems great for kids and people of the internets; let's teach people! *If you end up learning something; give me a :star:*
 
-This is fully open to pull requests, and what have you. I wouldn't mind making this more fun. :cat:
+This is fully open to pull requests, and what have you. I wouldn't mind making this more fun.
 
 ### Running Demo
 
@@ -24,7 +24,7 @@ This is fully open to pull requests, and what have you. I wouldn't mind making t
 
     git clone https://github.com/thejordanprice/cat-factory
     cd cat-factory
-    nano src/catgen.js
+    nano src/cat-factory.js
 
 Or for simple tinkering the jsfiddle link above could be useful. The entire project was originally developed on jsfiddle, then ported to github after polishing. *Note: Only missing piece on jsfiddle is the viewport for mobile testing (I could be wrong).*
 
@@ -35,29 +35,26 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
     <html>
         <head>
             <title>a cat-thing fork... :P</title>
-            <script type='text/javascript' src='/dist/catgen.min.js'></script>
+            <script type='text/javascript' src='/src/cat-factory.js'></script>
         </head>
         <body>
             <pre id='output'></pre>
             <button id='generate'>generate</button>
             <script>
-                // Run, initiating the library functions.
-                const Run = function() {
-                    let count = document.getElementById('count').value;
-                    let output = document.getElementById('output');
-                    genCats(count, output);
-                };
+                // Initiating the library functions.
+                const count = document.getElementById('count').value;
+                const output = document.getElementById('output');
 
-                // Event listener for onclick to generate.
+                // Event listener for onclick to invoke.
                 document.getElementById('generate')
-                    .addEventListener('click', function() {
-                    Run();
+                .addEventListener('click', function() {
+                    genCats(count, output);
                 });
             </script>
         </body>
     </html>
 
-A fiddle to fork using the library can be found [here](https://jsfiddle.net/thejordanprice/3713jcyf/).
+A fiddle to fork using the library can be found [here](https://jsfiddle.net/thejordanprice/3713jcyf/). :fork:
 
 **If Statements and Learning**
 
@@ -89,17 +86,20 @@ A fiddle to fork using the library can be found [here](https://jsfiddle.net/thej
         console.log(true); // true
     };
 
-I'm sure there are little things that need changed along the line somewhere, this was a complete hackathon over a few hours. Do you want to add **more** types of stats? **more** GUI options? ideas?... **do** it.
+:lightbulb: I'm sure there are little things that need changed along the line somewhere, this was a complete hackathon over a few hours. Do you want to add **more** types of stats? **more** GUI options? ideas?... **do** it.
+
+*edit: I spent a few days polishing while not working; prototype was completed pretty quickly via jsfiddle.*
 
 ### File Structure
 
-    /index.html          // html doc
-    /src/style.css       // stylesheet
-    /src/catgen.js       // the factory
+    /index.html               // html document.
+    /src/style.css            // stylesheet.
+    /src/cat-factory.js       // the factory.
+    /src/facts/index.js       // cat facts for fancy.
 
 ### Screenshot
 
-![Screenshot](https://i.imgur.com/ZH7aUMJ.png)
+![Screenshot](https://i.imgur.com/ECskXGB.png)
 
 ### To-Do
 
