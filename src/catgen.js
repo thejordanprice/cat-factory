@@ -43,12 +43,6 @@ const genCats = function(count, output) {
       lat: lonwhole + '.' + londecim,
       lon: latwhole + '.' + latdecim,
     };
-    // Just incase.
-    if (latdecim.length || londecim.length < 6) {
-      calcCoordinates(function(coordinates) {
-        callback(coordinates);
-      });
-    };
     callback(gps);
   };
 
