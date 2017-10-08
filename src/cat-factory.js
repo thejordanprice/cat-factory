@@ -1,4 +1,5 @@
 /**
+ * genGats() by thejordanprice
  * 
  * @arg {number} count
  * @arg {string} output 
@@ -7,7 +8,6 @@
  * 
  * genCats(1, 'output') responds with.
  * Generate one cat and then put it in the element with the id 'output'.
- *
  */
 const genCats = function(count, output) {
   /**
