@@ -10,9 +10,9 @@
 
 A simple webapp I've developed to show best practices and teach the fundamentals of Bootstrap and JavaScript development in a fun way. Not only is it fun to play with code if you already have some data to play with; but now its easy to get data and the data can involve cats or a ton of them whatever you prefer.
 
-This does utilize responsive web design with bootstrap/jquery/fontawesome. Then some of the exciting stuff such as let, const, callback, iterators, factories, ect... Not only does it do all that, but it doesn't require a server! This seems great for kids and people of the internets; let's teach people! *If you end up learning something; give me a :star:*
+This does utilize responsive web design with bootstrap/jquery/fontawesome. Then some of the exciting stuff such as let, const, callback, iterators, factories, ect... Not only does it do all that, but it doesn't require a server! This seems great for kids and people of the internets; let's teach people! *If you end up learning something; give me a star.*
 
-This is fully open to pull requests, and what have you. I wouldn't mind making this more fun.
+This is fully open to pull requests, and what have you. I wouldn't mind making this more fun. :sunglasses:
 
 ### Running Demo
 
@@ -54,7 +54,7 @@ Or for simple tinkering the jsfiddle link above could be useful. The entire proj
         </body>
     </html>
 
-A fiddle to fork using the library can be found [here](https://jsfiddle.net/thejordanprice/3713jcyf/). :fork:
+A fiddle to fork using the library can be found [here](https://jsfiddle.net/thejordanprice/3713jcyf/).
 
 **If Statements and Learning**
 
