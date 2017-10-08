@@ -1,3 +1,5 @@
+// @ts-check
+
 const genCats = function(count, output) {
   /**
    * Only let this use strict.
@@ -63,6 +65,8 @@ const genCats = function(count, output) {
 
   /**
    * A single cat generator from desired options.
+   * 
+   * This need redone? Pretty sure cat.id... is not correct.
    */
   const catGenerator = function(callback) {
     let cat = [];
