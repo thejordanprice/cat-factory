@@ -58,6 +58,14 @@ const genCats = function(count, output) {
   };
 
   /**
+   * Generate a random age.
+   */
+  const calcAge = function(callback) {
+    let age = Math.floor(Math.random() * 18) + 0;
+    callback(age);
+  };
+
+  /**
    * Generate an example ID.
    * This is a fun one.
    */
@@ -119,6 +127,10 @@ const genCats = function(count, output) {
     select(eyeColors, function(eyeColor) {
       cat.eyeColor = eyeColor;
     });
+    // Run the age calculator.
+    calcAge(function(age){
+      cat.age = age;
+    })
     // Run the weight calculator.
     calcWeight(5, 35, function(weight) {
       cat.weight = weight;
@@ -144,6 +156,7 @@ const genCats = function(count, output) {
           "alive": {
             "boolean": cat.alive,
             "lives": cat.lives,
+            "age": cat.age,
           },
           "specs": {
             "color": cat.color,

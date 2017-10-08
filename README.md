@@ -112,9 +112,8 @@ I'm sure there are little things that need changed along the line somewhere, thi
 - [x] Polish added UI elements.
 - [x] Add copied to clipboard alert.
 - [x] GPS coordinates of cat.
-- [ ] Add cats age.
+- [x] Add cats age.
 - [ ] Add more names and options.
-- [ ] Possibly seperate the options.
 - [ ] Find people that want JSON.
 
 
