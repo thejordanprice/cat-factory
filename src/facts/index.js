@@ -14,10 +14,10 @@ window.onload = function() {
     'Cats purr at the same frequency as an idling diesel engine.',
     'Some cats have thumbs.',
     'Nikola Tesla was inspired to investigate electricity from static around his cat.',
-    'Kittens start to dream when they’re about a week old.',
-    'By neutering a cat, you add about two to three years to its life.',
+    'Kittens start to dream when they\’re about a week old.',
+    'By neutering a cat, you add about two or three years to its life.',
     'Cats can run 30 mph.',
-    'Cats may have evolved their “tone of voice” to communicate with humans.',
+    'Cats may have evolved their voice to communicate with humans.',
     'The more you talk to your cat, the more it will talk to you.',
   ];
   let fact = facts[Math.floor(Math.random() * facts.length)];

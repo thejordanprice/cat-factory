@@ -86,7 +86,7 @@ A fiddle to fork using the library can be found [here](https://jsfiddle.net/thej
         console.log(true); // true
     };
 
-:lightbulb: I'm sure there are little things that need changed along the line somewhere, this was a complete hackathon over a few hours. Do you want to add **more** types of stats? **more** GUI options? ideas?... **do** it.
+I'm sure there are little things that need changed along the line somewhere, this was a complete hackathon over a few hours. Do you want to add **more** types of stats? **more** GUI options? ideas?... **do** it.
 
 *edit: I spent a few days polishing while not working; prototype was completed pretty quickly via jsfiddle.*
 
@@ -112,6 +112,7 @@ A fiddle to fork using the library can be found [here](https://jsfiddle.net/thej
 - [x] Polish added UI elements.
 - [x] Add copied to clipboard alert.
 - [x] GPS coordinates of cat.
+- [ ] Add cats age.
 - [ ] Add more names and options.
 - [ ] Possibly seperate the options.
 - [ ] Find people that want JSON.
