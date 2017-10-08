@@ -86,8 +86,8 @@
   };
   // Run, initiating the library functions.
   const Run = function() {
-    let count = document.getElementById('count').value;
-    let output = document.getElementById('output');
+    const count = document.getElementById('count').value;
+    const output = document.getElementById('output');
     genCats(count, output);
   };
 
@@ -108,16 +108,20 @@
   // Event listener for the copy to clipboard.
   document.getElementById('copy')
   .addEventListener('click', function(event) {
-    let text = document.getElementById('output').select();
+    // highlight the text.
+    document.getElementById('output').select();
+    // copy the text.
     document.execCommand('copy');
+    // replace text with message.
+    output.innerHTML = 'Object copied...';
   });
     
   // Event listener for onclick to destroy.
   document.getElementById('destroy')
   .addEventListener('click', function() {
-      // this is weird because i think;
-      // output is out of scope.
-      output.innerHTML = 'Logs Purrrged. :3';
+    // this is weird because i think;
+    // output is out of scope.
+    output.innerHTML = 'Logs Purrrged. :3';
   });
 </script>
 </body>
