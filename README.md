@@ -112,6 +112,8 @@ A fiddle to fork using the library can be found [here](https://jsfiddle.net/thej
 - [x] Polish added UI elements.
 - [x] Add copied to clipboard alert.
 - [x] GPS coordinates of cat.
+- [ ] Add more names and options.
+- [ ] Possibly seperate the options.
 - [ ] Find people that want JSON.
 
 
