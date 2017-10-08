@@ -1,7 +1,7 @@
 /**
  * 
- * @param {Number} count 
- * @param {Element} output 
+ * @arg {Number} count 
+ * @arg {Element} output 
  * 
  * If the second argument is null, it will return the object.
  * 
