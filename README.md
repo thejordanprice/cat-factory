@@ -110,8 +110,9 @@ I'm sure there are little things that need changed along the line somewhere, thi
 - [x] Finish library functionality.
 - [x] Call said library in code.
 - [x] Add some more cat data.
+- [x] Add copy to clipboard button.
+- [ ] Add copied to clipboard alert.
 - [ ] GPS coordinates of cat.
-- [ ] Add copy to clipboard button.
 - [ ] Find people that want JSON.
 
 
