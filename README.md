@@ -113,6 +113,7 @@ I'm sure there are little things that need changed along the line somewhere, thi
 - [x] Add copied to clipboard alert.
 - [x] GPS coordinates of cat.
 - [x] Add cats age.
+- [ ] Pick nice google font for logo.
 - [ ] Add more names and options.
 - [ ] Find people that want JSON.
 
