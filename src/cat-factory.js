@@ -23,7 +23,7 @@ const genCats = function(count, output) {
   const species = ["Abyssinian", "Siamese", "Persian", "American Shorthair", "Ragdoll", "Burmese", "Maine Coon", "Charteux", "Bengal", "Manx", "Sphynx"];
   const personalities = ["Friendly", "Hostile", "Cuddly", "Playful", "Attack Cat", "Snuggle Butt"];
   const physiques = ["Ultra Fat", "Fat", "Slender", "Tall", "Skinny", "Purrfect", "Normal"];
-  const eyeColors = ["Blue", "Green", "Aqua", "Yellow", "Orange", "Amber", "Brown", "Lilac", "Albino"];
+  const eyes = ["Blue", "Green", "Aqua", "Yellow", "Orange", "Amber", "Brown", "Lilac", "Albino"];
   const lives = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   /**
@@ -123,9 +123,9 @@ const genCats = function(count, output) {
     select(physiques, function(physique) {
       cat.physique = physique;
     });
-    // Select the colors.
-    select(eyeColors, function(eyeColor) {
-      cat.eyeColor = eyeColor;
+    // Select the eyes.
+    select(eyes, function(eyes) {
+      cat.eyes = eyes;
     });
     // Run the age calculator.
     calcAge(function(age){
@@ -161,7 +161,7 @@ const genCats = function(count, output) {
           "specs": {
             "color": cat.color,
             "weight": cat.weight,
-            "eyeColor": cat.eyeColor,
+            "eyes": cat.eyes,
             "personality": cat.personality,
             "physique": cat.physique,
           },
