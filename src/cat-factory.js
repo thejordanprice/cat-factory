@@ -182,7 +182,7 @@ const genCats = (count, output) => {
       // Send cats to DOM 
       output.innerHTML = JSON.stringify(cats, null, 2);
     };
-    if ((count) && (output == null)) {
+    if ((count) && (output === null)) {
       // If nowhere, return.
       return cats;
     };
