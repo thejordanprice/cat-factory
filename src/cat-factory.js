@@ -1,5 +1,5 @@
 /**
- * genGats() by thejordanprice
+ * genCats() by thejordanprice
  * 
  * @arg {number} count
  * @arg {string} output 
@@ -9,7 +9,7 @@
  * genCats(1, 'output') responds with.
  * Generate one cat and then put it in the element with the id 'output'.
  */
-const genCats = function(count, output) {
+const genCats = (count, output) => {
   /**
    * Only let this use strict.
    */
@@ -29,7 +29,7 @@ const genCats = function(count, output) {
   /**
    * Select a random object from an array.
    */
-  const select = function(array, callback) {
+  const select = (array, callback) => {
     let selected = array[Math.floor(Math.random() * array.length)];
     callback(selected);
   };
@@ -37,7 +37,7 @@ const genCats = function(count, output) {
   /**
    * Calculate a random weight.
    */
-  const calcWeight = function(min, max, callback) {
+  const calcWeight = (min, max, callback) => {
     let weight = Math.floor(Math.random() * max) + min;
     callback(weight);
   };
@@ -45,7 +45,7 @@ const genCats = function(count, output) {
   /**
    * Generate random GPS coordinates of cat.
    */
-  const calcCoordinates = function(callback) {
+  const calcCoordinates = (callback) => {
     let latwhole = Math.ceil(Math.random() * (90 + 90)) - 90;
     let lonwhole = Math.ceil(Math.random() * (180 + 180)) - 180;
     let latdecim = Math.floor(Math.random() * 999999) + 100000;
@@ -60,7 +60,7 @@ const genCats = function(count, output) {
   /**
    * Generate a random age.
    */
-  const calcAge = function(callback) {
+  const calcAge = (callback) => {
     let age = Math.floor(Math.random() * 18) + 0;
     callback(age);
   };
@@ -69,7 +69,7 @@ const genCats = function(count, output) {
    * Generate an example ID.
    * This is a fun one.
    */
-  const calcId = function(callback) {
+  const calcId = (callback) => {
     let id = Math.random().toString(32).substr(2, 32);
     if (id.length !== 10) {
       calcId(function(id) {
@@ -83,26 +83,26 @@ const genCats = function(count, output) {
   /**
    * A single cat generator from desired options.
    */
-  const catGenerator = function(callback) {
+  const catGenerator = (callback) => {
     let cat = [];
     // Generate an ID
-    calcId(function(id) {
+    calcId((id) => {
       cat.id = id;
     });
     // Generate GPS coordinates.
-    calcCoordinates(function(coordinates){
+    calcCoordinates((coordinates) => {
       cat.coordinates = coordinates;
     });
     // Select the name.
-    select(names, function(name) {
+    select(names, (name) => {
       cat.name = name;
     });
     // Select the species.
-    select(species, function(species) {
+    select(species, (species) => {
       cat.species = species;
     });
     // Select lives.
-    select(lives, function(life) {
+    select(lives, (life) => {
       cat.lives = life;
       // If alive.
       if (life !== 0) {
@@ -112,27 +112,27 @@ const genCats = function(count, output) {
       };
     });
     // Select the colors.
-    select(colors, function(color) {
+    select(colors, (color) => {
       cat.color = color;
     });
     // Select the personality.
-    select(personalities, function(personality) {
+    select(personalities, (personality) => {
       cat.personality = personality;
     });
     // Select the physique.
-    select(physiques, function(physique) {
+    select(physiques, (physique) => {
       cat.physique = physique;
     });
     // Select the eyes.
-    select(eyes, function(eyes) {
+    select(eyes, (eyes) => {
       cat.eyes = eyes;
     });
     // Run the age calculator.
-    calcAge(function(age){
+    calcAge((age) => {
       cat.age = age;
     })
     // Run the weight calculator.
-    calcWeight(5, 35, function(weight) {
+    calcWeight(5, 35, (weight) => {
       cat.weight = weight;
     });
     callback(cat);
@@ -142,12 +142,12 @@ const genCats = function(count, output) {
    * A cat factory that can produce ANY amount of cats.
    * Note: Cats were pushed; not hurt.
    */
-  const catFactory = function(count, callback) {
+  const catFactory = (count, callback) => {
     let cats = [];
     for (let x = 0; count > x; x++) {
       // How many, make that many.
       // One at a time.
-      catGenerator(function(cat) {
+      catGenerator((cat) => {
         let oneCat = {
           "id": cat.id,
           "name": cat.name,
@@ -175,7 +175,7 @@ const genCats = function(count, output) {
   /**
    * Run the entire setup.
    */
-  catFactory(count, function(cats) {
+  catFactory(count, (cats) => {
     if (count && output) {
       // Console.dir
       console.dir(cats);
