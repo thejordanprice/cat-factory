@@ -2,7 +2,7 @@
  * My generation of cat quotes for the bottom
  * of the page, I like them. :D
  */
-window.onload = function() {
+window.onload = () => {
   const facts = [
     'A fun tool to generate chunks data for learning.',
     'Sleeping helps cats conserve energy in between their meals.',
