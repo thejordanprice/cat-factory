@@ -1,4 +1,4 @@
-# cat-factory
+![Logoish](https://i.imgur.com/2JYGAS0.png)
 
 [![GitHub issues](https://img.shields.io/github/issues/thejordanprice/cat-factory.svg)](https://github.com/thejordanprice/cat-factory/issues)
 [![GitHub stars](https://img.shields.io/github/stars/thejordanprice/cat-factory.svg)](https://github.com/thejordanprice/cat-factory/stargazers)
